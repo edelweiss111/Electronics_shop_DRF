@@ -20,7 +20,7 @@ class ContactSerializer(serializers.ModelSerializer):
 
 
 class VendorSerializer(serializers.ModelSerializer):
-    """Сериализатор редактирования модели поставщика"""
+    """Сериализатор модели поставщика"""
 
     products = ProductSerializer(many=True)
     contacts = ContactSerializer(many=False)
