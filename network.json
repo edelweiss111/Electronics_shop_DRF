@@ -1,0 +1,106 @@
+[
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "name": "iphone",
+      "model": "15",
+      "release_date": null
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "name": "samsung",
+      "model": "a54",
+      "release_date": null
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "name": "test",
+      "model": "test",
+      "release_date": null
+    }
+  },
+  {
+    "model": "shop.contact",
+    "pk": 1,
+    "fields": {
+      "email": "factory@gmail.com",
+      "country": "USA",
+      "city": "New_York",
+      "street": "Kirova",
+      "house_number": 1
+    }
+  },
+  {
+    "model": "shop.contact",
+    "pk": 2,
+    "fields": {
+      "email": "retailer@gmail.com",
+      "country": "Russia",
+      "city": "Moskow",
+      "street": "Kirova",
+      "house_number": 2
+    }
+  },
+  {
+    "model": "shop.contact",
+    "pk": 16,
+    "fields": {
+      "email": "entrepreneur@gmail.com",
+      "country": "test1",
+      "city": "test1",
+      "street": "test1",
+      "house_number": 1
+    }
+  },
+  {
+    "model": "shop.vendor",
+    "pk": 1,
+    "fields": {
+      "name": "factoryphone",
+      "contacts": 1,
+      "supplier": null,
+      "arrears": "0.00",
+      "date_added": "2024-03-15T15:46:01.732Z",
+      "products": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "shop.vendor",
+    "pk": 2,
+    "fields": {
+      "name": "retailer",
+      "contacts": 2,
+      "supplier": 1,
+      "arrears": null,
+      "date_added": "2024-03-15T16:13:47.062Z",
+      "products": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "shop.vendor",
+    "pk": 14,
+    "fields": {
+      "name": "entrepreneur",
+      "contacts": 16,
+      "supplier": 2,
+      "arrears": "100.00",
+      "date_added": "2024-03-17T11:40:27.419Z",
+      "products": [
+        3
+      ]
+    }
+  }
+]
