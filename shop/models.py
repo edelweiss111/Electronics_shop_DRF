@@ -45,6 +45,7 @@ class Vendor(models.Model):
     supplier = models.ForeignKey('Vendor', on_delete=models.SET_NULL, **NULLABLE, verbose_name='Поставщик')
     arrears = models.DecimalField(max_digits=11, decimal_places=2, **NULLABLE, verbose_name='Задолженность перед поставщиком')
     date_added = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
+    hierarchy_level = models.SmallIntegerField(default=0, **NULLABLE, verbose_name='Уровень иерархии')
 
     def __str__(self):
         return f'{self.name}'
