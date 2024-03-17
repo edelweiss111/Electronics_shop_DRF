@@ -141,6 +141,6 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'shop.permissions.IsActiveUser',
+        'users.permissions.IsActiveUser',
     ]
 }
