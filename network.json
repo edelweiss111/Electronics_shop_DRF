@@ -22,7 +22,7 @@
     "pk": 3,
     "fields": {
       "name": "test",
-      "model": "test",
+      "model": "a54",
       "release_date": null
     }
   },
@@ -60,6 +60,17 @@
     }
   },
   {
+    "model": "shop.contact",
+    "pk": 40,
+    "fields": {
+      "email": "test3@mail.ru",
+      "country": "Germany",
+      "city": "Berlin",
+      "street": "Dolf",
+      "house_number": 123
+    }
+  },
+  {
     "model": "shop.vendor",
     "pk": 1,
     "fields": {
@@ -68,6 +79,7 @@
       "supplier": null,
       "arrears": "0.00",
       "date_added": "2024-03-15T15:46:01.732Z",
+      "hierarchy_level": 0,
       "products": [
         1,
         2
@@ -83,6 +95,7 @@
       "supplier": 1,
       "arrears": null,
       "date_added": "2024-03-15T16:13:47.062Z",
+      "hierarchy_level": 1,
       "products": [
         1,
         2
@@ -98,6 +111,7 @@
       "supplier": 2,
       "arrears": "100.00",
       "date_added": "2024-03-17T11:40:27.419Z",
+      "hierarchy_level": 2,
       "products": [
         3
       ]
